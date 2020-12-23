@@ -38,7 +38,7 @@ background-image: url("bg.jpg");
 
 .search
 {
-  transform: translate(6%,-450%);
+  transform: translate(6%,-630%);
 }
 .mic{width: 5%; height: 5%;transform: translate(-200%,33%);}
 
@@ -54,10 +54,10 @@ background-image: url("bg.jpg");
   box-shadow: 0 10px 20px  rgb(66, 65, 68), 0 6px 8px rgb(204, 203, 221);
 }
 .icon{
-  transform: translate(115%,-230%);
+  transform: translate(115%,-350%);
 }
 .o{
-  transform: translate(70%,-145%);
+  transform: translate(70%,-230%);
 }
 .input-bar::placeholder
 {
@@ -371,29 +371,29 @@ background-image: url("bg.jpg");
 }*/
 #google
 {
-  transform: translate(30%,-300%);
+  transform: translate(30%,-400%);
 }
 #netflix{
-  transform: translate(92%,-300%);
+  transform: translate(92%,-400%);
 }
 #oIn{
   transform: translate(110%,-230%);
 }
 /*second set starts*/
 #amazon{
-  transform: translate(-15%,-120%);
+  transform: translate(-15%,-210%);
 }
 #sastasundar{
   transform: translate(1000%,-400%);
 }
 #FB{
-  transform: translate(-270%,-120%);
+  transform: translate(-270%,-210%);
 }
 #instagram{
-  transform: translate(362%,-420%);
+  transform: translate(362%,-520%);
 }
 #flipkart{
-  transform: translate(230%,-230%);
+  transform: translate(230%,-325%);
 }
 #linkedin{
   transform: translate(93.7%,-343%);
@@ -413,20 +413,20 @@ transform: translate(0%,-1800%);
   transform: translate(-140%,-150%);
 }*/
 #pdf{
-  transform: translate(220%,-300%);
+  transform: translate(50%,-15%);
 }
 #zomato{
   transform: translate(265%,-380%);
 }
 #pinterest{
-  transform: translate(-185%,-195%);
+  transform: translate(207%,-130%);
 }
 #dailyhunt
 {
-  transform: translate(-160%,-240%);
+  transform: translate(-65%,-150%);
 }
 #opera-browser{
-  transform: translate(265%,-203%);
+  transform: translate(165%,-285%);
 }
 #angrybirds{
   transform: translate(-70%,120%);
@@ -438,11 +438,11 @@ transform: translate(0%,-1800%);
   transform: translate(-145%,-165%);
 }
 #whitehatjr{
-  transform: translate(1%,-205%);
+  transform: translate(-105%,-285%);
 }
 #twitter
 {
-  transform: translate(-250%,-180.786%);
+  transform: translate(35%,-360.786%);
 }
 #playstore
 {
