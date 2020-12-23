@@ -1,11 +1,11 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(63, 54, 54);
-   /* background-image: url("6aY2.gif");
+    /*background-color: rgb(71, 75, 77);
+    background-image: url("6aY2.gif");
     background-image: url("circle bgmore.gif");
-    background-image: url("mobile-bg.gif");
-background-image: url("debugged-software-bg-animation.gif");*/
+    background-image: url("mobile-bg.gif");*/
+background-image: url("bg.jpg");
 
 }
 
@@ -38,7 +38,7 @@ background-image: url("debugged-software-bg-animation.gif");*/
 
 .search
 {
-  transform: translate(6%,-540%);
+  transform: translate(6%,-450%);
 }
 .mic{width: 5%; height: 5%;transform: translate(-200%,33%);}
 
@@ -51,7 +51,13 @@ background-image: url("debugged-software-bg-animation.gif");*/
   height: 35px;
   font-size: 13px;
   color: #000;
-box-shadow: 0 10px 20px  rgb(31, 28, 28), 0 6px 6px rgb(170, 161, 161);
+  box-shadow: 0 10px 20px  rgb(66, 65, 68), 0 6px 8px rgb(204, 203, 221);
+}
+.icon{
+  transform: translate(115%,-230%);
+}
+.o{
+  transform: translate(70%,-145%);
 }
 .input-bar::placeholder
 {
@@ -365,29 +371,29 @@ box-shadow: 0 10px 20px  rgb(31, 28, 28), 0 6px 6px rgb(170, 161, 161);
 }*/
 #google
 {
-  transform: translate(30%,-350%);
+  transform: translate(30%,-300%);
 }
 #netflix{
-  transform: translate(92%,-350%);
+  transform: translate(92%,-300%);
 }
-#OIN-PNG{
-  transform: translate(-75%,-10485%);
+#oIn{
+  transform: translate(110%,-230%);
 }
 /*second set starts*/
 #amazon{
-  transform: translate(-15%,-150%);
+  transform: translate(-15%,-120%);
 }
 #sastasundar{
   transform: translate(1000%,-400%);
 }
 #FB{
-  transform: translate(-270%,-150%);
+  transform: translate(-270%,-120%);
 }
 #instagram{
-  transform: translate(362%,-470%);
+  transform: translate(362%,-420%);
 }
 #flipkart{
-  transform: translate(230%,-260%);
+  transform: translate(230%,-230%);
 }
 #linkedin{
   transform: translate(93.7%,-343%);
@@ -420,7 +426,7 @@ transform: translate(0%,-1800%);
   transform: translate(-160%,-240%);
 }
 #opera-browser{
-  transform: translate(265%,-227%);
+  transform: translate(265%,-203%);
 }
 #angrybirds{
   transform: translate(-70%,120%);
@@ -432,11 +438,11 @@ transform: translate(0%,-1800%);
   transform: translate(-145%,-165%);
 }
 #whitehatjr{
-  transform: translate(1%,-227%);
+  transform: translate(1%,-205%);
 }
 #twitter
 {
-  transform: translate(-250%,-200.786%);
+  transform: translate(-250%,-180.786%);
 }
 #playstore
 {
