@@ -25,7 +25,7 @@ no-repeat center;
 z-index: 99999;
 }
 .profile{
-  transform: translate(890%,-570%);
+  transform: translate(890%,-540%);
 }
 #search-box {
   border-color: black;
