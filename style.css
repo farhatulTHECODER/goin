@@ -46,7 +46,7 @@ z-index: 99999;
 
 .search
 {
-  transform: translate(6%,-650%);
+  transform: translate(6%,-700%);
 }
 .mic{width: 5%; height: 5%;transform: translate(-200%,33%);}
 
@@ -62,10 +62,10 @@ z-index: 99999;
   box-shadow: 0 10px 20px  rgb(50, 99, 204), 0 6px 8px rgb(0, 0, 0);
 }
 .icon{
-  transform: translate(115%,-320%);
+  transform: translate(115%,-350%);
 }
 .o{
-  transform: translate(70%,-207%);
+  transform: translate(70%,-230%);
 }
 .input-bar::placeholder
 {
