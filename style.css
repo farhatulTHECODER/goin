@@ -15,7 +15,15 @@ background-image: url("bg.jpg");
   font-family: 'Oswald', sans-serif;
   font-family: 'Roboto', sans-serif;   
 }
-
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff 
+url('preloader.gif')
+no-repeat center;
+z-index: 99999;
+}
 
 #search-box {
   border-color: black;
@@ -381,19 +389,19 @@ background-image: url("bg.jpg");
 }
 /*second set starts*/
 #amazon{
-  transform: translate(-15%,-210%);
+  transform: translate(-100%,-210%);
 }
 #sastasundar{
   transform: translate(1000%,-400%);
 }
 #FB{
-  transform: translate(-270%,-210%);
+  transform: translate(27%,-315%);
 }
 #instagram{
-  transform: translate(362%,-520%);
+  transform: translate(250%,-520%);
 }
 #flipkart{
-  transform: translate(230%,-325%);
+  transform: translate(130%,-320%);
 }
 #linkedin{
   transform: translate(93.7%,-343%);
@@ -406,27 +414,27 @@ transform: translate(0%,-1800%);
 }*/
 #youtube 
 {
-  transform: translate(409%,-612%);
+  transform: translate(0%,-80%);
 }
 /*#robo
 {
   transform: translate(-140%,-150%);
 }*/
 #pdf{
-  transform: translate(50%,-15%);
+  transform: translate(80%,20%);
 }
 #zomato{
   transform: translate(265%,-380%);
 }
 #pinterest{
-  transform: translate(207%,-130%);
+  transform: translate(165%,-150%);
 }
 #dailyhunt
 {
-  transform: translate(-65%,-150%);
+  transform: translate(-105%,-165%);
 }
 #opera-browser{
-  transform: translate(165%,-285%);
+  transform: translate(42%,-260%);
 }
 #angrybirds{
   transform: translate(-70%,120%);
@@ -438,11 +446,11 @@ transform: translate(0%,-1800%);
   transform: translate(-145%,-165%);
 }
 #whitehatjr{
-  transform: translate(-105%,-285%);
+  transform: translate(-70%,-420%);
 }
 #twitter
 {
-  transform: translate(35%,-360.786%);
+  transform: translate(140%,-380.786%);
 }
 #playstore
 {
@@ -454,7 +462,7 @@ transform: translate(0%,-1800%);
 {
   transform: translate(
     
-  -55%,-160%
+ 40%,-100%
 
   );
 
@@ -464,7 +472,7 @@ transform: translate(0%,-1800%);
 {transform: translate(
   
   
-  5%,-122%
+  30%,-170%
   
   
   );
