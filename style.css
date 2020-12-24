@@ -52,20 +52,20 @@ z-index: 99999;
 
 .input-bar{
   background-color: transparent;
-  border-width: 3px;
+  border-width: 1px;
   border-radius: 30px;
-  border-color: rgba(0, 0, 0, 0.651);
+  border-color: rgba(0, 0, 0, 0);
   width: 295px;
   height: 35px;
   font-size: 13px;
   color: #000;
-  box-shadow: 0 10px 20px  rgb(91, 125, 199), 0 6px 8px rgb(204, 203, 221);
+  box-shadow: 0 10px 20px  rgb(50, 99, 204), 0 6px 8px rgb(0, 0, 0);
 }
 .icon{
-  transform: translate(115%,-350%);
+  transform: translate(115%,-320%);
 }
 .o{
-  transform: translate(70%,-230%);
+  transform: translate(70%,-207%);
 }
 .input-bar::placeholder
 {
