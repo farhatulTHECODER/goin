@@ -5,15 +5,15 @@ body {
     background-image: url("6aY2.gif");
     background-image: url("circle bgmore.gif");
     background-image: url("mobile-bg.gif");*/
-background-image: url("bg.jpg");
+background-image: url("bg13.jpg");
+background-color: #887070;
 text-align: center;
-font-family: 'Oswald', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
-
 * {
   color: #000;
   font-weight: lighter;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 #loading{
   position: fixed;
@@ -24,8 +24,17 @@ url('preloader.gif')
 no-repeat center;
 z-index: 99999;
 }
+.status-bar{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background: #39353b;
+  height: 50px;
+  opacity: .9;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
 .profile{
-  transform: translate(420%,-540%);
+  transform: translate(430%,-700%);
 }
 #search-box {
   border-color: black;
@@ -61,8 +70,8 @@ z-index: 99999;
   font-size: 13px;
   color: #000;
   box-shadow: 0 10px 20px  rgb(50, 99, 204), 0 6px 8px rgb(0, 0, 0);
-  box-shadow: 13px 13px 20px #cac6c6,
-              -13px -13px 20px #f3f0f0;
+  box-shadow: 13px 13px 20px #ccc8c8,
+              -13px -13px 20px #8a8585;
 }
 .icon{
   transform: translate(10%,-350%);
@@ -97,6 +106,47 @@ z-index: 99999;
   transform: translate(270%,-1000%);
 }
 
+#icon {
+  font-size: 100px;
+  color: white;
+}
+
+.material-card {
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 326px;
+  height: 476px;
+  padding: 38px;
+  color: black;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+  overflow: visible;
+}
+  contents {
+    padding: 2px;
+  }
+
+#toggle { 
+color:black; 
+}
+  
+#tempC{
+  font-family: 'Heebo', sans-serif;
+  color: #e0d3d3;
+margin-top: -45px;
+}
+#locationName{
+  font-family: 'Heebo', sans-serif;
+  color: #00eaff;
+  margin-top: -5px;
+}
+.refresh{
+  margin-left: -210px;
+  margin-top: -39px;
+}
 /*#s-btn:hover{
   background-color: #fff;
   border-radius: 30px;
@@ -392,15 +442,18 @@ z-index: 99999;
 }
 /*second set starts*/
 #amazon{
+  background-color:#fff;
   transform: translate(-135%,-210%);
 }
 #sastasundar{
   transform: translate(1000%,-400%);
 }
 #FB{
+  background-color:#fff;
   transform: translate(-60%,-315%);
 }
 #instagram{
+  background-color:rgb(238, 119, 218);
   transform: translate(170%,-515%);
 }
 #flipkart{
