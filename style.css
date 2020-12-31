@@ -70,9 +70,11 @@ z-index: 99999;
 }
 .search
 {
-  transform: translate(2.7%,-870%);
+  transform: translate(2.7%,-890%);
 }
-.mic{width: 5%; height: 5%;transform: translate(-200%,33%);}
+.mic{width: 5%; height: 5%;transform: 
+translate(-200%,33%
+);}
 
 .input-bar{
   background-color: #ffffff;
@@ -119,12 +121,14 @@ z-index: 99999;
 .socialGmail{
   transform: translate(270%,-1000%);
 }
-
 #icon {
   font-size: 100px;
   color: white;
 }
-
+.Top_Main_Icon{
+  transform: translate(
+  -195%,-1080%
+)}
 .material-card {
   border-radius: 4px;
   position: absolute;
