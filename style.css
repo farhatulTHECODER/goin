@@ -1,12 +1,17 @@
+html,body{
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
 body {
     margin: 0px;
     padding: 0px;
     /*background-color: rgb(71, 75, 77);
     background-image: url("6aY2.gif");
     background-image: url("circle bgmore.gif");
-    background-image: url("mobile-bg.gif");*/
-background-image: url("bg13.jpg");
-background-color: #887070;
+    background-image: url("mobile-bg.gif");
+background-image: url("bg13.jpg");*/
+background-color: #e2d0d0;
 text-align: center;
 font-family: 'Montserrat', sans-serif;
 }
@@ -24,6 +29,14 @@ url('preloader.gif')
 no-repeat center;
 z-index: 99999;
 }
+
+.curveUi{
+  width: 350px;
+  transform: translate(-1.5%,-295%);
+  }
+.front_bg{
+  transform: translate(0%,-140%);
+}
 .status-bar{
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -32,6 +45,7 @@ z-index: 99999;
   opacity: .9;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
+  
 }
 .profile{
   transform: translate(430%,-700%);
@@ -56,22 +70,22 @@ z-index: 99999;
 }
 .search
 {
-  transform: translate(2%,-700%);
+  transform: translate(2.7%,-870%);
 }
 .mic{width: 5%; height: 5%;transform: translate(-200%,33%);}
 
 .input-bar{
-  background-color: transparent;
-  border-width: 1px;
+  background-color: #ffffff;
+  border-width: 0px;
   border-radius: 30px;
-  border-color: rgba(0, 0, 0, 0.075);
-  width: 295px;
-  height: 35px;
+  border-color: rgb(255, 255, 255);
+  width: 315px;
+  height: 40px;
   font-size: 13px;
   color: #000;
-  box-shadow: 0 10px 20px  rgb(50, 99, 204), 0 6px 8px rgb(0, 0, 0);
-  box-shadow: 13px 13px 20px #ccc8c8,
-              -13px -13px 20px #8a8585;
+  /*box-shadow: 0 10px 20px  rgb(50, 99, 204), 0 6px 8px rgb(0, 0, 0);
+  box-shadow: 13px 13px 20px #dad3d3,
+              -13px -13px 20px #8a8585;*/
 }
 .icon{
   transform: translate(10%,-350%);
@@ -132,20 +146,9 @@ z-index: 99999;
 #toggle { 
 color:black; 
 }
-  
-#tempC{
-  font-family: 'Heebo', sans-serif;
-  color: #e0d3d3;
-margin-top: -45px;
-}
-#locationName{
-  font-family: 'Heebo', sans-serif;
-  color: #00eaff;
-  margin-top: -5px;
-}
 .refresh{
-  margin-left: -210px;
-  margin-top: -39px;
+  margin-top: -42px;
+  margin-right: -290px;
 }
 /*#s-btn:hover{
   background-color: #fff;
@@ -156,7 +159,23 @@ margin-top: -45px;
   height: 34.5px;
   transform: translate(582%,-155%);
 }
-
+#tempC{
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  z-index: 100;
+  font-family: 'Heebo', sans-serif;
+  color: #ffffff;
+transform: translate(215%,210%);
+}
+#locationName{
+  font-size: 25px;
+  position: absolute;
+  z-index: 100;
+  font-family: 'Heebo', sans-serif;
+  color: #ffffff;
+  transform: translate(290%,340%);
+}
 /*#stickynotes
 {
   transform: translate(0%,-400%);
@@ -432,10 +451,11 @@ margin-top: -45px;
 }*/
 #google
 {
-  transform: translate(-20%,-400%);
+  border-color: #ffffff;
+  transform: translate(40%,-840%);
 }
 #netflix{
-  transform: translate(50%,-400%);
+  transform: translate(100%,-725%);
 }
 #oIn{
   transform: translate(110%,-230%);
@@ -443,21 +463,21 @@ margin-top: -45px;
 /*second set starts*/
 #amazon{
   background-color:#fff;
-  transform: translate(-135%,-210%);
+  transform: translate(55%,-725%);
 }
 #sastasundar{
   transform: translate(1000%,-400%);
 }
 #FB{
   background-color:#fff;
-  transform: translate(-60%,-315%);
+  transform: translate(-50%,-522%);
 }
 #instagram{
   background-color:rgb(238, 119, 218);
-  transform: translate(170%,-515%);
+  transform: translate(-10%,-725%);
 }
 #flipkart{
-  transform: translate(60%,-320%);
+  transform: translate(5%,-670%);
 }
 #linkedin{
   transform: translate(93.7%,-343%);
@@ -470,27 +490,27 @@ transform: translate(0%,-1800%);
 }*/
 #youtube 
 {
-  transform: translate(-45%,-80%);
+  transform: translate(5%,-560%);
 }
 /*#robo
 {
   transform: translate(-140%,-150%);
 }*/
 #pdf{
-  transform: translate(50%,20%);
+  transform: translate(35%,-380%);
 }
 #zomato{
   transform: translate(265%,-380%);
 }
 #pinterest{
-  transform: translate(120%,-150%);
+  transform: translate(85%,-500%);
 }
 #dailyhunt
 {
-  transform: translate(-170%,-165%);
+  transform: translate(-190%,-500%);
 }
 #opera-browser{
-  transform: translate(-5%,-260%);
+  transform: translate(20%,-500%);
 }
 #angrybirds{
   transform: translate(-70%,120%);
@@ -502,11 +522,11 @@ transform: translate(0%,-1800%);
   transform: translate(-145%,-165%);
 }
 #whitehatjr{
-  transform: translate(-110%,-420%);
+  transform: translate(-20%,-630%);
 }
 #twitter
 {
-  transform: translate(110%,-380.786%);
+  transform: translate(380%,-795.786%);
 }
 #playstore
 {
@@ -518,7 +538,7 @@ transform: translate(0%,-1800%);
 {
   transform: translate(
     
- 15%,-100%
+ 150%,-520%
 
   );
 
@@ -528,7 +548,7 @@ transform: translate(0%,-1800%);
 {transform: translate(
   
   
-  -130%,-170%
+  -310%,-450%
   
   
   );
@@ -543,7 +563,9 @@ transform: translate(0%,-1800%);
 {
   transform: translate(50%,-200%);
 }
-
+.topsites{
+  transform: translate(50%,-362%);
+}
 
 /*#s-box{
   width: 200px;
