@@ -21,12 +21,12 @@ console.log("Hello"+" "+ Chief);var Programmer_Fi = "Manager_Asraf Sk,CEO_Farhat
 console.log("Welcome" +" "+ Programmer_Fi);</script><!--GOOGLE SEARCH CODE ENDS--></head><!-- /*  // BODY // */ --><body onload="myFunction()" ontouchmove='refresh(event)'><!--Pull to refresh--><div id="ref"></div>
 <center><div id="shout-ref"></div></center><style>#ref{height: 50px;position: fixed;width: 100%;
 background: linear-gradient(#159, #fff);margin-top: -50px;}#shout-ref{margin-top: 50px;position: absolute;color: #999;/*opacity: .4;*/text-align: center;z-index: 0000;
-width: 100%;}</style><script>function refresh(event){var ref = document.querySelector('#ref');var shoutRef = document.querySelector('#shout-ref');
-var touch = event.targetTouches[0];var y = touch.pageY;console.log(y);var alg = Math.floor(y*1.5);if(y < 300){ref.style.height = y+'px';ref.style.transition = '.3s';setTimeout(function(){ref.style.height = '50px';}, 200);}if(y > 300){ref.style.height = '50px';ref.style.transition = '.2s';shoutRef.innerHTML = '<img src="loader.gif" width="15%" height="15%">';setTimeout(function(){location.reload()}, 500);}}</script>
-<!--<div id="loading">--></div><script>function goBack(){window.history.back();}function reload(){location.reload();}</script><div class="status-bar">
-<div><img src="left Arrow.png" width="10%" height="20%" style="margin-right:295px;margin-top:7px;"alt="Previous" onclick="goBack()"></div><div class="refresh"><img src="toolbar-refresh-icon.png" onclick="reload()" width="7.5%" alt="Refresh"></div>
-<div class="text-center container"><div id="tempC"></div><div id="locationName"></div></div><script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
-</div><script type="text/javascript"> function getWeather(lat, lon) {$.ajax({url: "https://api.darksky.net/forecast/9c4e8944261ed3b6f5f3438431a5cfa0/" + lat + "," + lon,dataType: "jsonp",
+width: 100%;}</style><script>/*function refresh(event){var ref = document.querySelector('#ref');var shoutRef = document.querySelector('#shout-ref');
+var touch = event.targetTouches[0];var y = touch.pageY;console.log(y);var alg = Math.floor(y*1.5);if(y < 300){ref.style.height = y+'px';ref.style.transition = '.3s';setTimeout(function(){ref.style.height = '50px';}, 200);}if(y > 300){ref.style.height = '50px';ref.style.transition = '.2s';shoutRef.innerHTML = '<img src="loader.gif" width="15%" height="15%">';setTimeout(function(){location.reload()}, 500);}}*/</script>
+<div id="loading"></div><script>function goBack(){window.history.back();}function reload(){location.reload();}</script>
+<!--<div><img src="left Arrow.png" width="10%" height="20%" style="margin-right:295px;margin-top:7px;"alt="Previous" onclick="goBack()"></div><div class="refresh"><img src="toolbar-refresh-icon.png" onclick="reload()" width="7.5%" alt="Refresh"></div>-->
+<!--<div><div id="tempC"></div><div id="locationName"></div></div>--><div class="text-center container"><div id="tempC"></div><div id="locationName"></div></div><script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+<script type="text/javascript"> function getWeather(lat, lon) {$.ajax({url: "https://api.darksky.net/forecast/9c4e8944261ed3b6f5f3438431a5cfa0/" + lat + "," + lon,dataType: "jsonp",
 success: function(data) {console.log("Current temp: " + data.currently.temperature);/* get all the information*/var fahrenheit = data.currently.temperature.toFixed(2),locationName = data.timezone,
 splice = locationName.indexOf("/"),icon = data.currently.icon.toUpperCase();console.log(icon);console.log(splice);
 //apparently the temperature is returned in kelvin, so we need to quickly convert it to celsius, which gives a horrible number so is rounded to two decimal places. 
@@ -37,38 +37,160 @@ $("#tempC").html(celsius + "&deg;C");$("#locationName").html(locationName.substr
 }});}/* Gets the users position */if (navigator.geolocation){navigator.geolocation.getCurrentPosition(function(position) {$("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);// Gets the users position
 var lat = position.coords.latitude;var lon = position.coords.longitude;getWeather(lat, lon); /* Calls the getWeather function which is defined above. Passes two arguments which are the user's current lattitude and longitude.*/ });
 }// If there is no location the code stalls and temp is replaced with a message telling the user to turn location on!// API key ""2ca252d74a373acc1b59fe6e45e5d3ae""
-</script><br><br><br><br><br><br><br><br><br><br><br><a href="login.html"><img src="profile-icon.png" width="10%" height="10%" class="profile" alt="sign in"></a>
-<br><br><img src="564-5646958_transparent-g-circle-g-logo-design-png-png (1).png" class="icon" style="
-width:20%" alt=""><img src="oIn.png" width="30%" class="o" alt=""><!--<img src="oIn.png" width="20%" height="20%" id="oIn">--><br><br><!--<img src="oIn.png" width="20%" height="20%" id="oIn">-->
-<!--<img src="©A.I.lnk" width="10%" height="10%" id="robo">--><form action="https://www.google.com/search" target="_blank" method="get" id="VoiceAssistant" class="search"><p><input type="text" placeholder="      Search Web or type a URL" name="q" id="transcript" class="input-bar"/><img src="mic.png" class="mic" onclick="startDictation()"></p></form><br>
+</script><br><br><br><br><br><br><br><br><br><br><br><!--<a href="login.html"><img src="profile-icon.png" width="10%" height="10%" class="profile" alt="sign in"></a>-->
+<br><br><!--<img src="564-5646958_transparent-g-circle-g-logo-design-png-png (1).png" class="icon" style="
+width:20%" alt=""><img src="oIn.png" width="30%" class="o" alt="">--><!--<img src="oIn.png" width="20%" height="20%" id="oIn">--><br><br><!--<img src="oIn.png" width="20%" height="20%" id="oIn">-->
+<!--<img src="©A.I.lnk" width="10%" height="10%" id="robo">--><img src="front_bg.jpg" height="230px" width="400px" class="front_bg" alt="Please take support from our team from Google Playstore if you have any issues"><form action="https://www.google.com/search" target="_blank" method="get" id="VoiceAssistant" class="search"><p><input type="text" placeholder="      Search Web or type a URL" name="q" id="transcript" class="input-bar"/><img src="mic.png" class="mic" onclick="startDictation()"></p></form><br>
 <!-- <img onclick="startDictation()" src="mic.png" width="12px" height="20px" name="q" id="transcript"/>-->
 <!-- <img src="https://img.icons8.com/nolan/64/search.png" id="s-icon"/> --><!--<img src="browser c-shade.jpeg"  id="brc-shade">--><!--first set of sites
 <a href="log.html"></a><img src="toolbar-refresh-icon.png" onclick="myButton()" height = "15%" width = "15%"  id="toolbar-refresh-icon">-->
-<a href="https://www.google.com" target="_blank"><img src="g1.png"  height = "20%" width = "20%" border="0" id="google"style="border-radius: 200px;"></a>
-<a href="https://www.netflix.com"target="_blank"><img src="netflixicon.png"  height = "20%" width = "20%" border = "0" id="netflix" style="
+<a href="https://www.google.com" target="_blank"><img src="g1.png"  height = "13%" width = "13%" border="3" id="google"style="border-radius: 200px;"></a>
+<a href="https://www.netflix.com"target="_blank"><img src="netflixicon.png"  height = "15%" width = "15%" border = "0" id="netflix" style="
 border-radius: 10px;"></a><!--<a href="https://www.youtube.com"><img src="oIn.png" height = "30%" width = "30%" border = "0" id="OIN-PNG"></a>
---><a href="https://www.youtube.com"><img src="Youtube(amin).png" height = "18.5%" width = "18.5%" border = "0" id="youtube"></a>
+--><a href="https://www.youtube.com"><img src="Youtube(amin).png" height = "15%" width = "15%" border = "0" id="youtube"></a>
 <a href="https://www.amazon.com"target="_blank"><img src="amazonlogo2.png" style="border-radius: 100px; 
-"height = "22%" width = "22%" border = "0" id="amazon"></a><!--<a href="https://www.sastasundar.com"target="_blank"><img src="unnamed.png" style="
+"height = "15%" width = "15%" border = "0" id="amazon"></a><!--<a href="https://www.sastasundar.com"target="_blank"><img src="unnamed.png" style="
 border-radius: 100px;box-shadow: 0 10px 20px  rgb(31, 28, 28), 0 6px 8px rgb(255, 255, 255);
 "height = "20%" width = "20%" border = "0" id="sastasundar"></a>-->
-<a href="https://www.facebook.com"target="_blank"><img src="facebook_logos_PNG19751.png"  height = "22%" width = "22%" border = "0" id="FB"  
+<a href="https://www.facebook.com"target="_blank"><img src="facebook_logos_PNG19751.png"  height = "16%" width = "16%" border = "0" id="FB"  
 style="/* background-color:   rgb(63, 54, 54);*/border-radius: 100px;"></a>
 <a href="https://www.instagram.com"target="_blank"><img src="instagram.png" style="border-radius: 16px;   
-"height = "20%" width = "20%" border = "0" id="instagram"></a><a href="https://www.flipkart.com"target="_blank"><img src="Flipart-Logo-Icon-PNG-Image.png" style="
-border-radius: 50px;"height = "22%" width = "22%" border = "0" id="flipkart"></a>
+"height = "15%" width = "15%" border = "0" id="instagram"></a><a href="https://www.flipkart.com"target="_blank"><img src="Flipart-Logo-Icon-PNG-Image.png" style="
+border-radius: 50px;"height = "15%" width = "15%" border = "0" id="flipkart"></a>
 <!--<a href="https://www.linkedin.com"><img src="Linkedin.png"  height = "22%" width = "22%" border = "0" id="linkedin"></a>
 --><!--<a href="https://www.voot.com"><img src="voot.png"  height = "20%" width = "20%" border = "0" id="voot"></a>
---><a href="https://www.ilovepdf.com"target="_blank"><img src="pdf-icon.png"  height = "30%" width = "40%" border = "0" id="pdf"></a>
+--><a href="https://www.ilovepdf.com"target="_blank"><img src="pdf-icon.png"  height = "22%" width = "22%" border = "0" id="pdf"></a>
 <!--<a href="https://www.zomato.com"><img src="zomato.png"  height = "20%" width = "20%" border = "0" id="zomato"></a>
---><a href="https://www.pinterest.com"><img src="pinterest.png"  height = "20%" width = "20%" border = "0" id="pinterest"></a>
+--><a href="https://www.pinterest.com"><img src="pinterest.png"  height = "15%" width = "15%" border = "0" id="pinterest"></a>
 <a href="https://www.dailyhunt.in"target="_blank"><img src="dailyhunt.png" style="
-border-radius:11px;" height = "18%" width = "18%" border = "0" id="dailyhunt"></a>
+border-radius:11px;" height = "15%" width = "15%" border = "0" id="dailyhunt"></a>
 <a href="https://www.opera.com"target="_blank"><img src="opera-icon-12.png"style="border-radius: 200px; 
-"height="20%" width="20%" id="opera-browser"></a><!--<a href="https://whitehatjr.github.io/AngryBirds-1/"><img src="angrybirds.png"  height = "25%" width = "25%" border = "0" id="angrybirds"></a>
+"height="15%" width="15%" id="opera-browser"></a><!--<a href="https://whitehatjr.github.io/AngryBirds-1/"><img src="angrybirds.png"  height = "25%" width = "25%" border = "0" id="angrybirds"></a>
 <a href="https://www.snapdeal.com"><img src="snapdeal.png"  height = "20%" width = "20%" border = "0" id="snapdeal"></a>
 <a href="https://www.github.com"><img src="github_circle_black-512.png"  height = "20%" width = "20%" border = "0" id="github"></a>-->
-<a href="https://www.sastasundar.com"target="_blank"><img src="unnamed.png" style="border-radius: 10px;"height = "20%" width = "20%" border = "0" id="whitehatjr"></a><a href="https://www.twitter.com"target="_blank"><img src="twitter-logo.png" style="border-radius: 100px;"height = "22%" width = "22%" border = "0" id="twitter"></a>
-<a href="https://earth.google.com/web"><img src="googleEarth.png"  height = "20%" width = "20%" border = "0" id="googleEarth"></a><a href="https://www.godaddy.com"><img src="godaddy.png"  height = "25%" width = "25%" border = "0" id="goDaddy"></a><!--
-<a href="https://www.news.google.com"><img src="GoogleNewsIcon.png"  height = "30%" width = "30%" border = "0" id="G-news"></a>--><script>var preloader = document.getElementById('loading');function myFunction() {preloader.style.display = 'none';}</script></body></html>
+<a href="https://www.sastasundar.com"target="_blank"><img src="unnamed.png" style="border-radius: 10px;"height = "15%" width = "15%" border = "0" id="whitehatjr"></a><a href="https://www.twitter.com"target="_blank"><img src="twitter-logo.png" style="border-radius: 100px;"height = "15%" width = "15%" border = "0" id="twitter"></a>
+<a href="https://earth.google.com/web"><img src="googleEarth.png"  height = "13%" width = "13%" border = "0" id="googleEarth"></a><a href="https://www.godaddy.com"><img src="godaddy.png"  height = "15%" width = "15%" border = "0" id="goDaddy"></a>
+<a href="topsites.html" style="text-decoration: none;"><img src="TopSites.png" class="topsites" width="20%" alt="Top Sites" style="text-decoration: none;"></a><!--
+<a href="https://www.news.google.com"><img src="GoogleNewsIcon.png"  height = "30%" width = "30%" border = "0" id="G-news"></a>-->
+<!--<img src="circle.png" alt="Ui" class="curveUi">--><label>
+<input type="checkbox">
+<span class="menu"> <span id="hamburger"></span> </span>
+
+<ul>
+ <a href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+ <a onclick="reload_Page()">Refresh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+ <a href="#">Take Support from Google PlayStore or from goinw96@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+</ul>
+<script type="text/javascript">
+function reload_Page(){
+    location.reload();
+}
+</script>
+</label><style>label .menu {
+    position: absolute;
+    right: 70px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: #90ceeb;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
+    
+  }
+  *, *:before, *:after 
+{ box-sizing: border-box; }
+  label #hamburger {
+    position: absolute;
+    top: 135px;
+    left: 80px;
+    width: 30px;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  
+  label #hamburger:after, label #hamburger:before {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+  }
+  
+  label #hamburger:before { top: -10px; }
+  
+  label #hamburger:after { bottom: -10px; }
+  
+  label input { display: none; }
+  
+  label input:checked + .menu {
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 0;
+    
+  }
+  
+  label input:checked + .menu #hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+  }
+  
+  label input:checked + .menu #hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+    
+  }
+  
+  label input:checked + .menu #hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+    
+  }
+  
+  label input:checked + .menu + ul { opacity: 1; }
+  
+  label ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: .25s 0s ease-in-out;
+    transition: .25s 0s ease-in-out;
+  }
+  
+  label a {
+    margin-bottom: 1em;
+    display: block;
+    color: #f38630;
+    text-decoration: none;
+    
+  }
+  
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+  </style>
+<script>var preloader = document.getElementById('loading');function myFunction() {preloader.style.display = 'none';}</script></body></html>
 <!--PROGRAMMING PART ENDS HERE--><!-- Code Under Licenses and ©Copyright/-->
